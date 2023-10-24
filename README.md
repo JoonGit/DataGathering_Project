@@ -38,16 +38,16 @@ React를 사용해 User가 차트를 통해 자재정보를 보여주는 서비�
 ### 1. 데이터 크롤링(크롤링 방식 설명)
 
 <center>
-    <img src="./img/pic2.png" />
+    <!-- <img src="./img/pic2.png" /> -->
 </center>
 python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 저장
-
+<수집장면 넣을 예정>
 <br>
 
 ### 2. 원자재 정보 저장
 
 <center>
-    <img src="./img/pic2.png" />
+    <!-- <img src="./img/pic2.png" /> -->
 </center>
 데이터 크롤링한 데이터를 저장
 데이터 종류<br>
@@ -60,7 +60,7 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 ### 3. kubernetes를 사용한 클라우드 시스템 구축
 
 <center>
-    <img src="./img/pic2.png" />
+    <img src="./img/아키텍쳐 구조도.png" />
 </center>
 kubernetes를 자원 사용의 효율을 높이고 윤영 관리의 편의성을 높여주었습니다<br>
 
@@ -68,9 +68,6 @@ kubernetes를 자원 사용의 효율을 높이고 윤영 관리의 편의성을
 
 ### 3-1. kubernetes Blue/Green 배포 설청
 
-<center>
-    <img src="./img/pic2.png" />
-</center>
 Jenkins와 연동해 배포시 Blue/Green 형식으로<br>
 배포 횟수가 홀수시 최신버전이 A 컨트롤러에 2개의 Pod가 생성되고<br>
 이전 버전인 B컨트롤러 Pod가 2개 삭제 되는 방식으로 구현하였습니다<br>
@@ -80,9 +77,6 @@ Jenkins와 연동해 배포시 Blue/Green 형식으로<br>
 
 ### 3-2. kubernetes MySQL 2중화를 사용해 DB 저장 안정성 구축
 
-<center>
-    <img src="./img/pic2.png" />
-</center>
 DB를 master와 slave로 2중화 하여 백업용 DB를 통해
 
 <br>
@@ -96,37 +90,18 @@ DB를 master와 slave로 2중화 하여 백업용 DB를 통해
 ### 4. Jenkins를 사용한 CI/CD
 
 <center>
-    <img src="./img/pic2.png" />
+    <img src="./img/Jenkins.PNG" />
 </center>
 Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
 
 <br>
-
-### 2. 게시판 기능
-
-<center>
-    <img src="./img/pic1.png" />
-</center>
-어떤 어떤 어떤 걸 작성하는 게시판 기능
-
-<br>
-
-## System Architecture
-
-<center>
-    <img src="./img/pic2.png" />
-</center>
-대용량 트래픽을 고려한 서버 이중화
-
-<br>
-
 ## 🔧 각 프로젝트 상세 설명
 
-### [프론트 엔드 github](http://www.naver.com) <- 클릭하면 이동됩니다!
+### [프론트 엔드 github](https://github.com/Resource-Predicters/Front_End) <- 클릭하면 이동됩니다!
 
-### [백 엔드 github](http://www.naver.com) <- 클릭하면 이동됩니다!
+### [백 엔드 github](https://github.com/Resource-Predicters/Back_End) <- 클릭하면 이동됩니다!
 
-### [데이터수집 & 인공지능 github](http://www.naver.com) <- 클릭하면 이동됩니다!
+### [데이터수집 & 인공지능 github](https://github.com/Resource-Predicters/Data) <- 클릭하면 이동됩니다!
 
 ## 🤼‍♂️팀원
 
