@@ -58,7 +58,10 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 수집한 데이터를 차트로 표현하여 가격 동향 확인
 
 <center>
-    <img src="./img/메인.png" />
+    <img src="./img/메인_02.png" />
+    <div>메인 페이지</div>
+    <img src="./img/메인_01.png" />
+    <div>디테일 페이지</div>
 </center>
 
 <br>
@@ -67,6 +70,7 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 
 <center>
     <img src="./img/아키텍쳐 구조도.png" />
+    <div>아키텍쳐 구조도</div>
 </center>
 kubernetes를 자원 사용의 효율을 높이고 윤영 관리의 편의성을 높여주었습니다<br>
 
@@ -80,11 +84,17 @@ Jenkins와 연동해 배포시 Blue/Green 형식으로<br>
 (짝수의 경우 A, B 컨트롤러 반대로 진행)
 
 <center>
+    <img src="./img/blue_green_03.png" />
+    <div>배포전</div>
     <img src="./img/blue_green_01.png" />
+    <div>배포중</div>
+    <img src="./img/blue_green_02.png" />
+    <div>배포후</div>
 </center>
 <center>
-    <img src="./img/blue_green_02.png" />
+    
 </center>
+
 <파드수 줄어들도 늘어나는거 이미지>
 <br>
 
@@ -93,15 +103,17 @@ Jenkins와 연동해 배포시 Blue/Green 형식으로<br>
 DB를 master와 slave로 2중화 하여 master의 정보를 slave에 저장하여 데이터 안정성 상승
 
 <center>
-    <img src="./img/k8s_db.png" />
+    <img src="./img/k8s_db_01.png" />
+    <div>master에서 확인한 slave</div>
+    <img src="./img/k8s_db_02.png" />
+    <div>slave의 master 연결 상태</div>
 </center>
 <br>
-*문제사항<br>
+*이슈사항<br>
 - mysql Pod 고정해서 지정<br>
 - mysql user 보안<br>
 - kubernetes 네트워크<br>
 
-<마스터 또는 슬레이브 상태 로 증명>
 <br>
 
 ### 4. Jenkins를 사용한 CI/CD
@@ -109,10 +121,13 @@ DB를 master와 slave로 2중화 하여 master의 정보를 slave에 저장하�
 Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
 
 <center>
-    <img src="./img/Jenkins.PNG" />
+    <img src="./img/Jenkins_1.PNG" />
+    <div>Jenkins 작업목록</div>
+    <img src="./img/Jenkins_2.png" />
+    <div>Jenkins k8s 연동</div>
 </center>
 <center>
-    <img src="./img/Jenkins_2.png" />
+    
 </center>
  <br>
 <br>
