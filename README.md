@@ -15,8 +15,11 @@
 ## ✨ 프로젝트 설명
 
 ```sh
-배터리 산업에 필요한 원자재의 가격을 수집하고
-AI 모델을 활용해 가격예측을 하는 프로젝트 입니다
+배터리 산업에 필요한 원자재의 가격을 수집하여 그래프로 시각화하여
+가격 동향을 쉽게 파악할 수 있습니다
+
+하도급 연동제에 따른 큰 가격의 변동을 예측하도록
+AI 모델을 활용해 가격예측을 할 수 있습니다
 ```
 
 ## 🎬 [데모 사이트](http://3.39.23.184/) <- 클릭하면 이동됩니다!
@@ -41,19 +44,22 @@ React를 사용해 User가 차트를 통해 자재정보를 보여주는 서비�
     <!-- <img src="./img/pic2.png" /> -->
 </center>
 python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 저장
-<수집장면 넣을 예정>
-<br>
 
-### 2. 원자재 정보 저장
+<br>데이터 종류
 
-<center>
-    <!-- <img src="./img/pic2.png" /> -->
-</center>
-데이터 크롤링한 데이터를 저장
-데이터 종류<br>
 - 수집할 원자재 정보<br>
 - 원자재 가격정보<br>
 - 원자재의 해당하는 이슈 정보<br>
+  <수집장면 넣을 예정>
+  <br>
+
+### 2. 원자재 정보 출력
+
+수집한 데이터를 차트로 표현하여 가격 동향 확인
+
+<center>
+    <img src="./img/메인.png" />
+</center>
 
 <br>
 
@@ -73,27 +79,42 @@ Jenkins와 연동해 배포시 Blue/Green 형식으로<br>
 이전 버전인 B컨트롤러 Pod가 2개 삭제 되는 방식으로 구현하였습니다<br>
 (짝수의 경우 A, B 컨트롤러 반대로 진행)
 
+<center>
+    <img src="./img/blue_green_01.png" />
+</center>
+<center>
+    <img src="./img/blue_green_02.png" />
+</center>
+<파드수 줄어들도 늘어나는거 이미지>
 <br>
 
-### 3-2. kubernetes MySQL 2중화를 사용해 DB 저장 안정성 구축
+### 3-2. kubernetes MySQL 2중화 구축
 
-DB를 master와 slave로 2중화 하여 백업용 DB를 통해
+DB를 master와 slave로 2중화 하여 master의 정보를 slave에 저장하여 데이터 안정성 상승
 
+<center>
+    <img src="./img/k8s_db.png" />
+</center>
 <br>
 *문제사항<br>
 - mysql Pod 고정해서 지정<br>
 - mysql user 보안<br>
 - kubernetes 네트워크<br>
 
+<마스터 또는 슬레이브 상태 로 증명>
 <br>
 
 ### 4. Jenkins를 사용한 CI/CD
 
+Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
+
 <center>
     <img src="./img/Jenkins.PNG" />
 </center>
-Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
-
+<center>
+    <img src="./img/Jenkins_2.png" />
+</center>
+ <br>
 <br>
 ## 🔧 각 프로젝트 상세 설명
 
@@ -103,11 +124,13 @@ Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
 
 ### [데이터수집 & 인공지능 github](https://github.com/Resource-Predicters/Data) <- 클릭하면 이동됩니다!
 
+### [아키텍쳐 github](https://github.com/Resource-Predicters/Data) <- 클릭하면 이동됩니다!
+
 ## 🤼‍♂️팀원
 
 Team Leader : 🐯**이재준**
 
-DataGathering : 🐶 **박선규**
+DataGathering & AI : 🐶 **박선규**
 
 Frontend : 🐺 **이윤정**
 
