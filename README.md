@@ -15,10 +15,10 @@
 ## ✨ 프로젝트 설명
 
 ```sh
-배터리 산업에 필요한 원자재의 가격을 수집하여 그래프로 시각화하여
+1. 배터리 산업에 필요한 원자재의 가격을 수집하여 그래프로 시각화하여
 가격 동향을 쉽게 파악할 수 있습니다
 
-하도급 연동제에 따른 큰 가격의 변동을 예측하도록
+2. 하도급 연동제에 따른 큰 가격의 변동을 예측하도록
 AI 모델을 활용해 가격예측을 할 수 있습니다
 ```
 
@@ -31,9 +31,8 @@ AI 모델을 활용해 가격예측을 할 수 있습니다
 ## 📌 프로젝트 목표
 
 ```sh
-python을 사용해 데이터 크롤링을 하여 DB에 저장을 하고
-Java Spring을 통해 데이터를 불러와
-React를 사용해 User가 차트를 통해 자재정보를 보여주는 서비스를 만들었습니다
+python을 사용해(원천 데이터 에서) 데이터 크롤링을 하여 DB에 (크롤링 주기) 저장을 하고
+WEB으로 차트를 통해 자재정보를 보여주는 서비스를 만들었습니다
 ```
 
 ## 🔍 Overview
@@ -59,9 +58,9 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 
 <center>
     <img src="./img/메인_02.png" />
-    <div>메인 페이지</div>
+    <div align="center">메인 페이지</div>
     <img src="./img/메인_01.png" />
-    <div>디테일 페이지</div>
+    <div align="center">디테일 페이지</div>
 </center>
 
 <br>
@@ -70,32 +69,31 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 
 <center>
     <img src="./img/아키텍쳐 구조도.png" />
-    <div>아키텍쳐 구조도</div>
-</center>
+    <div align="center">아키텍쳐 구조도</div>
+</center><br>
 kubernetes를 자원 사용의 효율을 높이고 윤영 관리의 편의성을 높여주었습니다<br>
 
 <br>
 
 ### 3-1. kubernetes Blue/Green 배포 설청
 
-Jenkins와 연동해 배포시 Blue/Green 형식으로<br>
-배포 횟수가 홀수시 최신버전이 A 컨트롤러에 2개의 Pod가 생성되고<br>
+Jenkins와 연동해 배포시 Blue/Green 형식으로 무중단 배포를 구현하였습니다<br>
+Jenkins의 배포 횟수가 홀수시 최신버전이 A 컨트롤러에 2개의 Pod가 생성되고<br>
 이전 버전인 B컨트롤러 Pod가 2개 삭제 되는 방식으로 구현하였습니다<br>
 (짝수의 경우 A, B 컨트롤러 반대로 진행)
 
 <center>
     <img src="./img/blue_green_03.png" />
-    <div>배포전</div>
+    <div align="center">배포전</div>
     <img src="./img/blue_green_01.png" />
-    <div>배포중</div>
+    <div align="center">배포중</div>
     <img src="./img/blue_green_02.png" />
-    <div>배포후</div>
+    <div align="center">배포후</div>
 </center>
 <center>
     
 </center>
 
-<파드수 줄어들도 늘어나는거 이미지>
 <br>
 
 ### 3-2. kubernetes MySQL 2중화 구축
@@ -104,12 +102,12 @@ DB를 master와 slave로 2중화 하여 master의 정보를 slave에 저장하�
 
 <center>
     <img src="./img/k8s_db_01.png" />
-    <div>master에서 확인한 slave</div>
+    <div align="center">master에서 확인한 slave</div>
     <img src="./img/k8s_db_02.png" />
-    <div>slave의 master 연결 상태</div>
+    <div align="center">slave의 master 연결 상태</div>
 </center>
 <br>
-*이슈사항<br>
+*이슈사항<br>(세부 사항은 하단 아키텍쳐 git 서술)
 - mysql Pod 고정해서 지정<br>
 - mysql user 보안<br>
 - kubernetes 네트워크<br>
@@ -122,9 +120,9 @@ Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
 
 <center>
     <img src="./img/Jenkins_1.PNG" />
-    <div>Jenkins 작업목록</div>
+    <div align="center">Jenkins 작업목록</div>
     <img src="./img/Jenkins_2.png" />
-    <div>Jenkins k8s 연동</div>
+    <div align="center">Jenkins 작업내역</div>
 </center>
 <center>
     
