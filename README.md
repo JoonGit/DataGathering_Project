@@ -1,13 +1,13 @@
-<h1 align="center">제목 정하는 중 👍</h1>
+<h1 align="center">원자재 수집과 예 👍</h1>
 
 <center>
-    <img src="./img/test.jpg"  style="zoom:76%;" align="center"/>
+
 </center>
 
 > [한국품질재단] 스마트팩토리SW개발과정 / 4팀
 
-🎬[Demo 시연영상](https://www.youtube.com/watch?v=dhMrKTwNI8U&lc=UgzCJR3WxkvsckRyyO94AaABAg&ab_channel=%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B4%EC%84%9C%EB%B0%B0%EC%9A%B0%EB%8A%94IT)  
-🎤[발표](https://www.youtube.com/watch?v=dhMrKTwNI8U&lc=UgzCJR3WxkvsckRyyO94AaABAg&ab_channel=%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B4%EC%84%9C%EB%B0%B0%EC%9A%B0%EB%8A%94IT)  
+<!--🎬[Demo 시연영상](https://www.youtube.com/watch?v=dhMrKTwNI8U&lc=UgzCJR3WxkvsckRyyO94AaABAg&ab_channel=%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B4%EC%84%9C%EB%B0%B0%EC%9A%B0%EB%8A%94IT)  -->
+<!--#🎤[발표](https://www.youtube.com/watch?v=dhMrKTwNI8U&lc=UgzCJR3WxkvsckRyyO94AaABAg&ab_channel=%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B4%EC%84%9C%EB%B0%B0%EC%9A%B0%EB%8A%94IT)   -->
 📃[프로젝트 회고록](https://joon-coding.tistory.com/)
 
 <br>
@@ -48,7 +48,6 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 
 - 원자재 가격정보<br>
 - 원자재의 해당하는 이슈 정보<br>
-  <수집장면 넣을 예정>
   <br>
   출처 : 네이버 뉴스, 원천데이터 사이트
   ### 2. AI 예측 데이터
@@ -59,7 +58,6 @@ python을 사용해 데이터 크롤링을 하고 WAS에 전달하여 데이터 
 DB에 저장되어 있는 데이터를 가져와 시계열 예측을 합니다
 
 <br>
-### 2. 원자재 정보 출력
 
 수집한 데이터를 차트로 표현하여 가격 동향 확인
 
@@ -144,7 +142,7 @@ Jenkins를 사용해 AWS와 kubernetes 자동화 배포 실행
 
 ### [데이터수집 & 인공지능 github](https://github.com/Resource-Predicters/Data) <- 클릭하면 이동됩니다!
 
-### [아키텍쳐 github](https://github.com/Resource-Predicters/Data) <- 클릭하면 이동됩니다!
+### [아키텍쳐 github](https://github.com/Resource-Predicters/Architecture) <- 클릭하면 이동됩니다!
 
 ## 🤼‍♂️팀원
 
