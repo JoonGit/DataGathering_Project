@@ -10,3 +10,5 @@
 [submodule "Architecture"]
 	path = Architecture
 	url = https://github.com/Resource-Predicters/Architecture.git
+[submodule "lv-library"]
+	branch = main
