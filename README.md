@@ -1,5 +1,5 @@
 <h1 align="center">프라이빗 클라이드를 사용한 원자재 수집 및 예측 👍</h1>
-
+* Gig 안에 프로젝트 PPT안에 시연영상이 있습니다
 <center>
 
 </center>
