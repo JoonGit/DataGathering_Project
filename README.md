@@ -1,4 +1,4 @@
-<h1 align="center">원자재 수집 및 예측 👍</h1>
+<h1 align="center">프라이빗 클라이드를 사용한 원자재 수집 및 예측 👍</h1>
 
 <center>
 
